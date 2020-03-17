@@ -1,0 +1,14 @@
+{
+    "CreateAPIKey": 0,
+    "AppSyncApiName": "janga",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": "false",
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authjangab4ce5e93",
+            "Outputs.UserPoolId"
+        ]
+    },
+    "S3DeploymentBucket": "amplify-janga-dev-142210-deployment",
+    "S3DeploymentRootKey": "amplify-appsync-files/80eb5e3b37336337e3e886b3bd8a4d95e878003a"
+}

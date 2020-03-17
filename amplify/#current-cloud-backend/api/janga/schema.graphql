@@ -1,0 +1,8 @@
+type Todo @model @searchable @auth(rules: [{ allow: owner }]) {
+  email: String!
+  username: String!
+  accessToken: String!
+  idToken: String!
+  refreshToken: String!
+}
+

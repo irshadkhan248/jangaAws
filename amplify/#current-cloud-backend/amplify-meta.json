@@ -1,0 +1,85 @@
+{
+	"providers": {
+		"awscloudformation": {
+			"AuthRoleName": "amplify-janga-dev-142210-authRole",
+			"UnauthRoleArn": "arn:aws:iam::444083742860:role/amplify-janga-dev-142210-unauthRole",
+			"AuthRoleArn": "arn:aws:iam::444083742860:role/amplify-janga-dev-142210-authRole",
+			"Region": "ap-south-1",
+			"DeploymentBucketName": "amplify-janga-dev-142210-deployment",
+			"UnauthRoleName": "amplify-janga-dev-142210-unauthRole",
+			"StackName": "amplify-janga-dev-142210",
+			"StackId": "arn:aws:cloudformation:ap-south-1:444083742860:stack/amplify-janga-dev-142210/98206110-682c-11ea-a00b-0a6895f2a65c",
+			"AmplifyAppId": "d36zl3hmjbn35y"
+		}
+	},
+	"auth": {
+		"jangab4ce5e93": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": [],
+			"customAuth": false,
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-janga-dev-142210-deployment/amplify-cfn-templates/auth/jangab4ce5e93-cloudformation-template.yml",
+				"logicalId": "authjangab4ce5e93"
+			},
+			"lastPushTimeStamp": "2020-03-17T09:46:42.586Z",
+			"output": {
+				"AppClientSecret": "1abjvspaihmekjf9sokso4ml29me1alk019v2vk1ceqj2caiouhv",
+				"UserPoolId": "ap-south-1_A6hIZ6jIK",
+				"AppClientIDWeb": "7lu3rk9hgn7objg6l65a49qi6f",
+				"AppClientID": "44684622m4mdvjlp5d0chtoeba",
+				"IdentityPoolId": "ap-south-1:b7d7fcb4-6535-4e12-b295-7ce7e19106ba",
+				"IdentityPoolName": "jangab4ce5e93_identitypool_b4ce5e93__dev",
+				"UserPoolName": "jangab4ce5e93_userpool_b4ce5e93"
+			},
+			"lastPushDirHash": "geQ3A6gz9s+6mS9oi7aFZTnrlcA="
+		}
+	},
+	"api": {
+		"janga": {
+			"service": "AppSync",
+			"providerPlugin": "awscloudformation",
+			"output": {
+				"authConfig": {
+					"additionalAuthenticationProviders": [],
+					"defaultAuthentication": {
+						"authenticationType": "AMAZON_COGNITO_USER_POOLS",
+						"userPoolConfig": {
+							"userPoolId": "authjangab4ce5e93"
+						}
+					}
+				},
+				"GraphQLAPIIdOutput": "venocbnegnfa3ixkrbrx5drhwa",
+				"GraphQLAPIEndpointOutput": "https://ie4x7fdn7jc6xeoit6opdcmvbi.appsync-api.ap-south-1.amazonaws.com/graphql"
+			},
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-janga-dev-142210-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+				"logicalId": "apijanga"
+			},
+			"lastPushTimeStamp": "2020-03-17T09:46:42.586Z",
+			"lastPushDirHash": "eCCeUJFaCKFjxxgzzzZKNm+WyYY="
+		}
+	},
+	"hosting": {
+		"S3AndCloudFront": {
+			"service": "S3AndCloudFront",
+			"providerPlugin": "awscloudformation",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-janga-dev-142210-deployment/amplify-cfn-templates/hosting/template.json",
+				"logicalId": "hostingS3AndCloudFront"
+			},
+			"lastPushTimeStamp": "2020-03-17T09:46:42.586Z",
+			"output": {
+				"CloudFrontSecureURL": "https://d1468qg6iabhek.cloudfront.net",
+				"S3BucketSecureURL": "https://janga-bucket-dev.s3.amazonaws.com",
+				"CloudFrontOriginAccessIdentity": "EMTNHFQYEE0UM",
+				"WebsiteURL": "http://janga-bucket-dev.s3-website.ap-south-1.amazonaws.com",
+				"CloudFrontDistributionID": "E2U00U10R1RRUD",
+				"Region": "ap-south-1",
+				"HostingBucketName": "janga-bucket-dev",
+				"CloudFrontDomainName": "d1468qg6iabhek.cloudfront.net"
+			},
+			"lastPushDirHash": "h2cd+uQlwKV0AWxII7qmxkKgFvI="
+		}
+	}
+}

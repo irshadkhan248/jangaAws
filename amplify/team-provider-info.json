@@ -1,0 +1,20 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-janga-dev-142210-authRole",
+            "UnauthRoleArn": "arn:aws:iam::444083742860:role/amplify-janga-dev-142210-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::444083742860:role/amplify-janga-dev-142210-authRole",
+            "Region": "ap-south-1",
+            "DeploymentBucketName": "amplify-janga-dev-142210-deployment",
+            "UnauthRoleName": "amplify-janga-dev-142210-unauthRole",
+            "StackName": "amplify-janga-dev-142210",
+            "StackId": "arn:aws:cloudformation:ap-south-1:444083742860:stack/amplify-janga-dev-142210/98206110-682c-11ea-a00b-0a6895f2a65c",
+            "AmplifyAppId": "d36zl3hmjbn35y"
+        },
+        "categories": {
+            "auth": {
+                "jangab4ce5e93": {}
+            }
+        }
+    }
+}

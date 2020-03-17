@@ -1,0 +1,11 @@
+{
+    "AppSyncApiName": "janga",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": "false",
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authjangab4ce5e93",
+            "Outputs.UserPoolId"
+        ]
+    }
+}
